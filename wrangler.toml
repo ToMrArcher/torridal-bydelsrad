@@ -1,0 +1,7 @@
+# Cloudflare Pages (gratis). Koble repoet i Cloudflare-dashbordet med:
+#   Build command:          python3 build.py
+#   Build output directory: site
+# eller last opp direkte: python3 build.py && npx wrangler pages deploy
+name = "torridal-bydelsrad"
+pages_build_output_dir = "./site"
+compatibility_date = "2026-11-01"

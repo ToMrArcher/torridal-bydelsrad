@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+{{robots}}<meta name="theme-color" content="#2f6b2b">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="https://usercontent.one/wp/www.bydel.info/wp-content/uploads/2026/01/bydelsrad-logo-mindret_.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500..700&family=Figtree:wght@400..800&family=Fraunces:opsz,wght,SOFT@9..144,400..800,0..100&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#innhold">Hopp til innhold</a>
+
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="crayon" x="-2%" y="-10%" width="104%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-32)">
+      <path d="M0 2h8" stroke="#fff" stroke-opacity=".11" stroke-width="1.4"/>
+      <path d="M0 6h8" stroke="#000" stroke-opacity=".05" stroke-width="1.1"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Torridal bydelsråd – til forsiden">
+      <svg class="brand-mark" viewBox="0 0 50 40" aria-hidden="true">
+        <g class="bm-sun"><circle cx="22" cy="15" r="6.5"/><path d="M22 3.5v3M13.8 7l2 2M30.2 7l-2 2M10.5 15h3M30.5 15h3"/></g>
+        <path class="bm-3" d="M20 40c3.5-11 9-19.5 16-19.5S47 30 50 40Z"/>
+        <path class="bm-2" d="M12 40c3-8 7-13 12-13s8.5 5 11 13Z"/>
+        <path class="bm-1" d="M0 40c3-11 8.5-18 14.5-18S25 29 28 40Z"/>
+      </svg>
+      <span class="brand-name">Torridal Bydelsråd<span>et godt sted å bo</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hovedmeny">
+      <svg class="i open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      Meny
+    </button>
+    <nav class="main-nav" id="hovedmeny" aria-label="Hovedmeny">
+      <ul>
+        <li><a href="aktuelt.html"{{active:aktuelt}}>Aktuelt</a></li>
+        <li><a href="referater.html"{{active:referater}}>Referater</a></li>
+        <li><a href="arbeidsgrupper.html"{{active:arbeidsgrupper}}>Arbeidsgrupper</a></li>
+        <li><a href="styret.html"{{active:styret}}>Styret</a></li>
+        <li><a href="om.html"{{active:om}}>Om bydelsrådet</a></li>
+        <li><a href="vedtekter.html"{{active:vedtekter}}>Vedtekter</a></li>
+        <li class="nav-cta"><a href="kontakt.html"{{active:kontakt}}>Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="innhold">
+{{page_hero}}
+{{content}}
+</main>
+
+<footer class="site-footer">
+  <svg class="footer-hills" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path class="a" d="M0 120V70C160 30 300 18 450 40s260 60 420 40 330-70 570-50v90Z"/>
+    <path class="b" d="M0 120V92c200-40 380-46 560-24s340 40 520 22 260-30 360-22v52Z"/>
+    <path class="c" d="M0 120v-14c240-18 480-20 720-12s480 10 720-6v32Z"/>
+  </svg>
+  <div class="footer-body">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Torridal bydelsråd – til forsiden">
+          <svg class="brand-mark" viewBox="0 0 50 40" aria-hidden="true">
+            <g class="bm-sun"><circle cx="22" cy="15" r="6.5"/><path d="M22 3.5v3M13.8 7l2 2M30.2 7l-2 2M10.5 15h3M30.5 15h3"/></g>
+            <path class="bm-3" d="M20 40c3.5-11 9-19.5 16-19.5S47 30 50 40Z"/>
+            <path class="bm-2" d="M12 40c3-8 7-13 12-13s8.5 5 11 13Z"/>
+            <path class="bm-1" d="M0 40c3-11 8.5-18 14.5-18S25 29 28 40Z"/>
+          </svg>
+          <span class="brand-name">Torridal Bydelsråd<span>et godt sted å bo</span></span>
+        </a>
+        <p>En uavhengig organisasjon for alle innbyggere i Torridal – uten tilknytning til politiske partier eller religiøse grupper.</p>
+      </div>
+      <div>
+        <h2>Bydelsrådet</h2>
+        <ul>
+          <li><a href="aktuelt.html">Aktuelt fra styret</a></li>
+          <li><a href="referater.html">Referater og protokoller</a></li>
+          <li><a href="arbeidsgrupper.html">Arbeidsgrupper</a></li>
+          <li><a href="styret.html">Styret</a></li>
+          <li><a href="om.html">Om bydelsrådet</a></li>
+          <li><a href="vedtekter.html">Vedtekter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>I Torridal</h2>
+        <ul>
+          <li><a href="http://www.torridal.no/">Torridal idrettslag</a></li>
+          <li><a href="https://www.minskole.no/torridal">Torridal skole</a></li>
+          <li><a href="https://www.minskole.no/mosby">Mosby oppvekstsenter</a></li>
+          <li><a href="https://torridalsposten.blogspot.com/">Torridalsposten</a></li>
+          <li><a href="index.html#lag">Alle lag og foreninger</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <ul>
+          <li><a data-mail href="kontakt.html"><span class="addr">post (at) bydel.info</span></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61573037518357">Bydelsrådet på Facebook</a></li>
+        </ul>
+        <p class="note">Vi ønsker at all kontakt skal være skriftlig.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="footer-bottom">
+        <span>© 2026 Torridal bydelsråd · Grunnlagt desember 2024</span>
+        <span>Logoen er vinnerbidraget i logokonkurransen for skolene i Torridal.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

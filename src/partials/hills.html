@@ -1,0 +1,18 @@
+<svg class="hills" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="hill-3" d="M560 260C690 150 850 52 1060 48c190-4 310 92 380 140v72Z"/>
+      <path id="hill-2" d="M190 260C330 160 470 96 640 94c170-2 270 80 360 166Z"/>
+      <path id="hill-1" d="M-20 260C70 170 170 106 300 104c130-2 220 66 300 156Z"/>
+      <clipPath id="hills-clip"><use href="#hill-3"/><use href="#hill-2"/><use href="#hill-1"/></clipPath>
+    </defs>
+    <path class="sun-rays" style="transform-origin: 500px 118px" d="M500 70V48M524 76l11-19M541.6 94l19-11M548 118h22M476 76l-11-19M458.4 94l-19-11M452 118h-22"/>
+    <circle class="sun-core" cx="500" cy="118" r="38"/>
+    <g filter="url(#crayon)">
+      <use href="#hill-3" class="f3"/>
+      <use href="#hill-2" class="f2"/>
+      <use href="#hill-1" class="f1"/>
+      <rect width="1440" height="260" fill="url(#hatch)" clip-path="url(#hills-clip)"/>
+    </g>
+    <path class="house" d="M262 150v-24l28-23 28 23v24"/>
+    <path class="front" d="M0 232c240-22 480-16 720-8s480 14 720-12v48H0Z"/>
+  </svg>
